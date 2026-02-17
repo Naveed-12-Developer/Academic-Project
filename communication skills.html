@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication Skills Page</title>
+    <style>
+        *{
+            text-transform: capitalize;
+        }
+        body{
+            background-image: url(image\ 1.jpeg);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5% ;
+            flex-wrap: wrap;
+            background-color: antiquewhite;
+        }
+        .logo{
+            font-size: 24px;
+            font-weight: 600;
+            color: rgb(23, 143, 23);
+            background-color: antiquewhite;
+            text-align: center;
+            margin-left: 1cm;
+            padding-top: 10px;
+            text-decoration:overline;
+        }
+        .nav-links{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        .nav-links li a{
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(13, 104, 58);
+            font-size: 1 rem;
+        }
+        @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+        text-align: center;
+    }
+}
+        .nav-links li a.actice{
+            color: #0c083d;
+        }
+        /* .nav-links li a:hover{
+            transition: ease-in-out;
+            background: linear-gradient(45deg,#504996,#056659,#9caa22);
+            color: azure;
+            padding: 10px;
+            border-radius: 20px;
+        } */
+        .nav-links li {
+        width: 100%;
+        border-bottom: 1px solid rgba(0,0,0,0.1); 
+        padding-bottom: 5px;
+    }
+
+        /* Styling for Communication Page */
+.comm-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f1e4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.comm-hero {
+    background-color: #2D5A27; 
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.comm-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.comm-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.comm-intro {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.comm-intro .text-content {
+    flex: 1;
+}
+
+.comm-intro h2 {
+    color: #2D5A27;
+    font-size: 2rem;
+}
+
+.comm-intro img {
+    flex: 1;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 40px 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.skill-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-card .icon {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    color: #2D5A27;
+}
+
+.comm-cta {
+    text-align: center;
+    margin-top: 60px;
+    padding: 40px;
+    background: #e2dac2;
+    border-radius: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #2D5A27;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #1e3d1a;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .comm-intro {
+        flex-direction: column;
+    }
+}
+         footer{
+            background-color: honeydew;
+            text-align: center;
+            padding: 20px;
+        }
+        footer p{
+            margin-top: 10px;
+            font-weight: 900;
+            text-transform: capitalize;
+        }
+        footer h3{
+            font-size: x-large;
+            text-decoration: underline;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+    <div class="logo"><i>Bright Path Academy</i></div>
+    <ul class="nav-links">
+    <li><a href="Bright Path Academy By Naveed Aslam.html" >Home</a></li>
+    <li> <a href="Academy Registration Form.html" >Registration</a></li>
+    <li> <a href="about us-content.html">About Us</a></li>
+    <li> <a href="courses details.html">Courses Details</a></li>
+    <li> <a href="#" class="actice">Communication Skills</a></li>
+    <li> <a href="contact us .html">Contact Us</a></li>
+</ul>
+   </nav> 
+   </header>
+   <section class="comm-page">
+    <div class="comm-hero">
+        <h1>Master the Art of Communication</h1>
+        <p>Connect, Persuade, and Lead with Confidence.</p>
+    </div>
+
+    <div class="comm-container">
+        <div class="comm-intro">
+            <div class="text-content">
+                <h2>Why Communication Matters</h2>
+                <p>In today’s digital world, technical skills get you the interview, but communication skills get you the job. At <strong>BrightPath Academy</strong>, we bridge the gap between knowing your craft and expressing your ideas effectively.</p>
+            </div>
+            <div class="image-content">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=500" alt="Students collaborating">
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135810.png" alt="Verbal icon" class="icon">
+                <h3>Verbal Skills</h3>
+                <p>Learn to speak clearly and present your ideas with authority in any setting.</p>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2593/2593549.png" alt="Writing icon" class="icon">
+                <h3>Professional Writing</h3>
+                <p>Master emails, reports, and digital messaging to project professionalism.</p>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1189/1189138.png" alt="Listening icon" class="icon">
+                <h3>Active Listening</h3>
+                <p>Understand others truly and build stronger professional relationships.</p>
+            </div>
+        </div>
+
+        <div class="comm-cta">
+            <h2>Ready to speak with impact?</h2>
+            <a href="Academy Registration Form.html" class="cta-button">Enroll in the Course</a>
+        </div>
+    </div>
+</section>
+   <footer>
+    <h3>BrightPath Academy</h3>
+    <p>Learn. Build. Grow Quality education for modern learners Practical skills for real-world success Built for students, by learners
+© 2026 BrightPath Academy. All Rights Reserved.
+</p>
+</body>
+</html>

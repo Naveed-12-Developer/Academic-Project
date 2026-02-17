@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my website courses detais page</title>
+    <style>
+         body{
+            background: url(image\ 1.jpeg);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+       .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5% ;
+            flex-wrap: wrap;
+            background-color: antiquewhite;
+        }
+        .logo{
+            font-size: 24px;
+            font-weight: 600;
+            color: rgb(23, 143, 23);
+            background-color: antiquewhite;
+            text-align: center;
+            margin-left: 1cm;
+            padding-top: 10px;
+            text-decoration:overline;
+        }
+        .nav-links{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        .nav-links li a{
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(13, 104, 58);
+            font-size: 1 rem;
+        }
+        @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+        text-align: center;
+    }
+}
+        .nav-links li a.actice{
+            color: #0c083d;
+        }
+        /* .nav-links li a:hover{
+            transition: ease-in-out;
+            background: linear-gradient(45deg,#504996,#056659,#9caa22);
+            color: azure;
+            padding: 10px;
+            border-radius: 20px;
+        } */
+        .nav-links li {
+        width: 100%;
+        border-bottom: 1px solid rgba(0,0,0,0.1); 
+        padding-bottom: 5px;
+    }
+        .course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.course-card {
+    background: rgba(255, 255, 255, 0.658);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    color: rgb(15, 1, 1);
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #ccff00; /* Neon green highlight on hover */
+}
+
+.course-card h3 {
+    color: #0b6672;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.course-card ul {
+    list-style: none;
+    margin: 15px 0;
+    padding-left: 0;
+}
+
+.course-card li {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.course-card li::before {
+    content: "➜";
+    color: #7d990b;
+    margin-right: 10px;
+}
+         footer{
+            background-color: honeydew;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        footer p{
+            margin-top: 10px;
+            font-weight: 900;
+            text-transform: capitalize;
+        }
+        footer h3{
+            font-size: x-large;
+            text-decoration: underline;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+    <div class="logo"><i>Bright Path Academy</i></div>
+    <ul class="nav-links">
+    <li><a href="Bright Path Academy By Naveed Aslam.html" >Home</a></li>
+    <li> <a href="about us-content.html" >Registration</a></li>
+    <li> <a href="about us-content.html">About Us</a></li>
+    <li> <a href="#"class="actice">Courses Details</a></li>
+    <li> <a href="communication skills.html">Communication Skills</a></li>
+    <li> <a href="contact us .html">Contact Us</a></li>
+</ul>
+   </nav> 
+   </header>
+   <div class="course-grid">
+    <div class="course-card">
+        <h3>Web Development</h3>
+        <p>Build the internet of tomorrow. Master responsive design and modern coding standards.</p>
+        <ul>
+            <li>HTML5 & CSS3 Mastery
+                <ul>
+                    <li>Build the internet of tomorrow. This course takes you from a blank screen to a fully functional, responsive website. We don't just teach you how to code; we teach you how to design experiences that users love.</li>
+                    <li>Key Topics: HTML5 Semantic Structure, CSS3 Flexbox & Grid, Responsive Mobile-First Design, and Introduction to JavaScript.</li>
+                   <li> Outcome: You will finish with a professional personal portfolio website ready to show employers.</li>
+                </ul>
+            
+        </ul>
+    </div>
+
+    <div class="course-card">
+        <h3>Programming Basics</h3>
+        <p>The logic-first approach to coding. Perfect for beginners who want a solid foundation.</p>
+        <ul>
+            <li>Logic & Algorithms
+                <ul>
+                    <li>The backbone of all technology is logic. This course is specifically designed for absolute beginners who find coding intimidating. We focus on the "why" behind the code, making complex logic feel like second nature.</li>
+                    <li>Key Topics: Variable Logic, Loops & Arrays, Functions, and Debugging Techniques using Python or JavaScript.</li>
+                    <li>Outcome: Master the mindset of a programmer and gain the ability to learn any new language with ease.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="course-card">
+        <h3>Communication Skills</h3>
+        <p>Bridge the gap between code and people. Learn to present and lead effectively.</p>
+        <ul>
+            <li>Technical Speaking
+                <ul>
+                    <li>In the digital world, being a great coder isn't enough—you need to be a great collaborator. This course bridges the gap between technical skill and professional success, teaching you how to explain your ideas clearly to teams and clients.</li>
+                    <li>Key Topics: Technical Writing, Public Speaking for Tech, Active Listening, and Effective Remote Collaboration.</li>
+                    <li>Outcome: Gain the confidence to ace interviews, lead meetings, and present your projects with authority.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+    <footer>
+    <h3>BrightPath Academy</h3>
+    <p>Learn. Build. Grow Quality education for modern learners Practical skills for real-world success Built for students, by learners
+© 2026 BrightPath Academy. All Rights Reserved.
+</p>
+   </footer>
+</body>
+</html>
